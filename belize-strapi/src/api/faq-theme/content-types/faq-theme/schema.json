@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "faq_themes",
+  "info": {
+    "singularName": "faq-theme",
+    "pluralName": "faq-themes",
+    "displayName": "FAQ_Theme"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "FAQ_Theme_Name": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "faqs": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::faq.faq",
+      "mappedBy": "faq_theme"
+    },
+    "faq_section": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::faq-section.faq-section",
+      "inversedBy": "faq_themes"
+    }
+  }
+}

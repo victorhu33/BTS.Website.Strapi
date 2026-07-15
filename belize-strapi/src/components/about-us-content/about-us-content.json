@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_about_us_content_about_us_contents",
+  "info": {
+    "displayName": "About Us Content"
+  },
+  "options": {},
+  "attributes": {
+    "About_Us_Content_Title": {
+      "type": "string"
+    },
+    "About_Us_Content_Text": {
+      "type": "blocks"
+    }
+  },
+  "config": {}
+}

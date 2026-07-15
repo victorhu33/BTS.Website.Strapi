@@ -1,0 +1,87 @@
+{
+  "kind": "singleType",
+  "collectionName": "home_top_servicess",
+  "info": {
+    "singularName": "home-top-services",
+    "pluralName": "home-top-servicess",
+    "displayName": "Home_Top_Services"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "Home_TS_Tax_Resources_Title": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "Home_TS_Guides_Tutorials": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "Home_TS_Banks_Title": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "Home_TS_Support_Title": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "Home_TS_Support_Email_Contact_Text": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "Home_TS_Support_Chatbox_Text": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "tax_resources": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::tax-resource.tax-resource"
+    },
+    "guides": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::guide.guide"
+    },
+    "tutorials": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::tutorial.tutorial"
+    },
+    "banks": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::bank.bank"
+    }
+  }
+}

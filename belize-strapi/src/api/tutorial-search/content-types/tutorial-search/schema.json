@@ -1,0 +1,51 @@
+{
+  "kind": "singleType",
+  "collectionName": "tutorial_searches",
+  "info": {
+    "singularName": "tutorial-search",
+    "pluralName": "tutorial-searches",
+    "displayName": "Tutorial_Search"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "Tutorial_Search_Title": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "Tutorial_Search_Text": {
+      "type": "text",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "Tutorial_Search_Title_Search_Field_Name": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "Tutorial_Search_Title_Search_Field_Placeholder": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_registration_content_registration_contents",
+  "info": {
+    "displayName": "Registration Content"
+  },
+  "options": {},
+  "attributes": {
+    "Registration_Content_Title": {
+      "type": "string"
+    },
+    "Registration_Content_Text": {
+      "type": "richtext"
+    }
+  },
+  "config": {}
+}

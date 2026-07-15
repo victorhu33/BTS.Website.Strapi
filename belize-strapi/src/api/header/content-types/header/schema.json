@@ -1,0 +1,38 @@
+{
+  "kind": "singleType",
+  "collectionName": "headers",
+  "info": {
+    "singularName": "header",
+    "pluralName": "headers",
+    "displayName": "Header"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "Header_Moto": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "required": true
+    },
+    "menu_options": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::menu-option.menu-option"
+    },
+    "news_carousel": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::news.news"
+    }
+  }
+}

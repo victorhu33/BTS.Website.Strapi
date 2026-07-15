@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_red_social_icono_de_red_socials",
+  "info": {
+    "displayName": "Icono de Red Social"
+  },
+  "options": {},
+  "attributes": {
+    "Red_Social_Icono": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Red_Social_URL": {
+      "type": "string"
+    },
+    "Red_Social_Name": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,67 @@
+{
+  "kind": "collectionType",
+  "collectionName": "menu_options",
+  "info": {
+    "singularName": "menu-option",
+    "pluralName": "menu-options",
+    "displayName": "Menu_Option"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "Option_Name": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "required": true
+    },
+    "Option_URL": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "required": true
+    },
+    "Option_Order": {
+      "type": "integer",
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
+    },
+    "menu_options": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::menu-option.menu-option",
+      "mappedBy": "menu_option"
+    },
+    "menu_option": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::menu-option.menu-option",
+      "inversedBy": "menu_options"
+    },
+    "Main_Menu": {
+      "type": "boolean",
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "required": true,
+      "default": false
+    }
+  }
+}

@@ -1,0 +1,7 @@
+/**
+ * home-top-services router
+ */
+
+import { factories } from '@strapi/strapi';
+
+export default factories.createCoreRouter('api::home-top-services.home-top-services');

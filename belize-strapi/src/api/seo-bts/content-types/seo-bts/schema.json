@@ -1,0 +1,36 @@
+{
+  "kind": "singleType",
+  "collectionName": "seo_btss",
+  "info": {
+    "singularName": "seo-bts",
+    "pluralName": "seo-btss",
+    "displayName": "SEO_BTS"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Organization_Name": {
+      "type": "string"
+    },
+    "Organization_URL": {
+      "type": "string"
+    },
+    "Organization_Logo": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Social_Networks": {
+      "type": "component",
+      "component": "red-social.redes-sociales",
+      "repeatable": true
+    },
+    "Website_Name": {
+      "type": "string"
+    }
+  }
+}

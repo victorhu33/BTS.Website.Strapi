@@ -1,0 +1,51 @@
+{
+  "kind": "singleType",
+  "collectionName": "tax_resources_pages",
+  "info": {
+    "singularName": "tax-resources-page",
+    "pluralName": "tax-resources-pages",
+    "displayName": "Tax_Resources_Page"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "Tax_Resources_Page_Title": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "Tax_Resources_Page_Text": {
+      "type": "richtext",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "Tax_Resources_Page_News_Title": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "Tax_Resources_Page_News_Text": {
+      "type": "richtext",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    }
+  }
+}

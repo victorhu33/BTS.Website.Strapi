@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_footer_option_footer_column_01_options",
+  "info": {
+    "displayName": "Footer Column 01 Option"
+  },
+  "options": {},
+  "attributes": {
+    "Option_Text": {
+      "type": "string"
+    },
+    "Option_URL": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

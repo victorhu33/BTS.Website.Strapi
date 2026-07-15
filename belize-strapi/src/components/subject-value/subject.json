@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_subject_value_subjects",
+  "info": {
+    "displayName": "Subject"
+  },
+  "options": {},
+  "attributes": {
+    "Subject_Value": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

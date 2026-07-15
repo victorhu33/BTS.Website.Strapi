@@ -1,0 +1,43 @@
+{
+  "kind": "singleType",
+  "collectionName": "iris_belize_tutorials_pages",
+  "info": {
+    "singularName": "iris-belize-tutorials-page",
+    "pluralName": "iris-belize-tutorials-pages",
+    "displayName": "IRIS_Belize_Tutorials_Page"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "IRIS_Belize_Tutorials_Page_Title": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "IRIS_Belize_Tutorials_Page_TopText": {
+      "type": "richtext",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "IRIS_Belize_Tutorials_Page_Bottom_Text": {
+      "type": "richtext",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    }
+  }
+}

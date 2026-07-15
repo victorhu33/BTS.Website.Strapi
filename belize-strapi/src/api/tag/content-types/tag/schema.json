@@ -1,0 +1,59 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tags",
+  "info": {
+    "singularName": "tag",
+    "pluralName": "tags",
+    "displayName": "Tag"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "Tag_Name": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "Tag_Description": {
+      "type": "text",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "tax_resources": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::tax-resource.tax-resource",
+      "inversedBy": "Tax_Resource_Tags"
+    },
+    "news": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::news.news",
+      "inversedBy": "News_Tags"
+    },
+    "tutorials": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::tutorial.tutorial",
+      "inversedBy": "Tutorial_Tags"
+    },
+    "guides": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::guide.guide",
+      "mappedBy": "tags"
+    }
+  }
+}

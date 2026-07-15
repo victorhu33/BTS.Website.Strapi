@@ -1,0 +1,221 @@
+{
+  "kind": "collectionType",
+  "collectionName": "newss",
+  "info": {
+    "singularName": "news",
+    "pluralName": "newss",
+    "displayName": "News"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "News_Headline": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "required": true
+    },
+    "News_Headline_Carousel": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "News_Type": {
+      "type": "enumeration",
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "enum": [
+        "News",
+        "Legal Publication",
+        "Alert"
+      ]
+    },
+    "News_DateTime": {
+      "type": "datetime",
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "required": true
+    },
+    "News_Author": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "required": true
+    },
+    "News_Summary": {
+      "type": "blocks",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "News_Image": {
+      "type": "media",
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "News_Image_Position": {
+      "type": "enumeration",
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "enum": [
+        "Top",
+        "Bottom",
+        "Left",
+        "Right"
+      ]
+    },
+    "News_Docs": {
+      "type": "media",
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "multiple": true,
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos",
+        "audios"
+      ]
+    },
+    "News_Content": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "news-content.news-content",
+      "repeatable": true
+    },
+    "News_Source": {
+      "type": "blocks",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "News_Order": {
+      "type": "integer",
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "default": 0
+    },
+    "News_Country": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "default": "Belize"
+    },
+    "News_Location": {
+      "type": "enumeration",
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "enum": [
+        "Belize City",
+        "Belmopan",
+        "Benque Viejo del Carmen",
+        "Big Falls",
+        "Burrell Boom",
+        "Carmelita",
+        "Chunox",
+        "Consejo",
+        "Corozal Town",
+        "Crooked Tree",
+        "Dangriga",
+        "Hattieville",
+        "Hopkins",
+        "Independence and Mango Creek",
+        "Ladyville",
+        "Maskall",
+        "Orange Walk Town",
+        "Placencia",
+        "Punta Gorda",
+        "San Estevan",
+        "San Ignacio",
+        "San Jose Palmar",
+        "San Pedro Columbia",
+        "Santa Elena",
+        "Sarteneja",
+        "Seine Bight",
+        "Silver Creek",
+        "Spanish Lookout",
+        "Trial Farm"
+      ]
+    },
+    "News_URL": {
+      "type": "uid",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "targetField": "News_Headline",
+      "required": false
+    },
+    "News_Image_Description": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "News_Categories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::tax-resource-category.tax-resource-category",
+      "mappedBy": "news"
+    },
+    "News_Tags": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::tag.tag",
+      "mappedBy": "news"
+    }
+  }
+}

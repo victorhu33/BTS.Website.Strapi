@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "seo_pages",
+  "info": {
+    "singularName": "seo-page",
+    "pluralName": "seo-pages",
+    "displayName": "SEO_Page"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Page_Id": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "metaTitle": {
+      "type": "string"
+    },
+    "metaDescription": {
+      "type": "string"
+    },
+    "metaKeywords": {
+      "type": "string"
+    },
+    "ogImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "ogImageWidth": {
+      "type": "integer"
+    },
+    "ogImageHeight": {
+      "type": "integer"
+    },
+    "ogImageType": {
+      "type": "string"
+    },
+    "ogImageAlt": {
+      "type": "string"
+    }
+  }
+}

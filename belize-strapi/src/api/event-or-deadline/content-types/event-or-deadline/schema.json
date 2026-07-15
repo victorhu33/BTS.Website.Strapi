@@ -1,0 +1,51 @@
+{
+  "kind": "collectionType",
+  "collectionName": "events_and_deadlines",
+  "info": {
+    "singularName": "event-or-deadline",
+    "pluralName": "events-and-deadlines",
+    "displayName": "Events_and_Deadlines"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "Event_Deadline_DateTime": {
+      "type": "datetime",
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
+    },
+    "Event_Deadline_Description": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "Event_Deadline_Link_Text": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "Event_Deadline_Link_URL": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
+    }
+  }
+}

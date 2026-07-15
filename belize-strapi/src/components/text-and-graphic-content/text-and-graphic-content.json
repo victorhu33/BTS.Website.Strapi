@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_text_and_graphic_content_text_and_graphic_contents",
+  "info": {
+    "displayName": "Text and Graphic Content"
+  },
+  "options": {},
+  "attributes": {
+    "Text": {
+      "type": "blocks"
+    },
+    "Media": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Media_Position": {
+      "type": "enumeration",
+      "enum": [
+        "Top",
+        "Bottom",
+        "Right",
+        "Left"
+      ]
+    }
+  },
+  "config": {}
+}

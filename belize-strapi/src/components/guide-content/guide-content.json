@@ -1,0 +1,38 @@
+{
+  "collectionName": "components_guide_content_guide_contents",
+  "info": {
+    "displayName": "Guide Content"
+  },
+  "options": {},
+  "attributes": {
+    "Guide_Content_Title": {
+      "type": "string"
+    },
+    "Guide_Content_Text": {
+      "type": "richtext"
+    },
+    "Guide_Content_Media": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "videos",
+        "audios",
+        "files"
+      ]
+    },
+    "Guide_Content_Media_Name": {
+      "type": "string"
+    },
+    "Guide_Content_Media_Position": {
+      "type": "enumeration",
+      "enum": [
+        "Top",
+        "Bottom",
+        "Left",
+        "Right"
+      ]
+    }
+  },
+  "config": {}
+}

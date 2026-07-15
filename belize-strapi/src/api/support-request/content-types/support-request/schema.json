@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "support_requests",
+  "info": {
+    "singularName": "support-request",
+    "pluralName": "support-requests",
+    "displayName": "Support_Request"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "email",
+      "required": true
+    },
+    "phone": {
+      "type": "string",
+      "required": false
+    },
+    "subject": {
+      "type": "string"
+    },
+    "message": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

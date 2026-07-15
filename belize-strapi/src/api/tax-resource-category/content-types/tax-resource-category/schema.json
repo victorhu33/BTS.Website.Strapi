@@ -1,0 +1,70 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tax_resource_categories",
+  "info": {
+    "singularName": "tax-resource-category",
+    "pluralName": "tax-resource-categories",
+    "displayName": "Tax_Resource_Category"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "Tax_Resource_Category_Name": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "required": true,
+      "unique": true
+    },
+    "Tax_Resource_Category_Text": {
+      "type": "richtext",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "Tax_Resources": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::tax-resource.tax-resource",
+      "mappedBy": "tax_resource_categories"
+    },
+    "Tax_Resource_Category_ID": {
+      "type": "uid",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "targetField": "Tax_Resource_Category_Name"
+    },
+    "news": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::news.news",
+      "inversedBy": "News_Categories"
+    },
+    "tutorials": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::tutorial.tutorial",
+      "inversedBy": "Tutorial_Categories"
+    },
+    "guides": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::guide.guide",
+      "mappedBy": "tax_resource_categories"
+    }
+  }
+}

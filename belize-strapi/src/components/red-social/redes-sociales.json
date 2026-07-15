@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_red_social_redes_sociales",
+  "info": {
+    "displayName": "Redes_Sociales"
+  },
+  "options": {},
+  "attributes": {
+    "Plataform": {
+      "type": "enumeration",
+      "enum": [
+        "Facebook",
+        "Instagram",
+        "Linkedin",
+        "TikTok",
+        "X",
+        "YouTube"
+      ]
+    },
+    "URL": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

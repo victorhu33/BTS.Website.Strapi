@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_news_content_news_contents",
+  "info": {
+    "displayName": "News Content",
+    "icon": "cast"
+  },
+  "options": {},
+  "attributes": {
+    "News_Content_Text": {
+      "type": "blocks"
+    },
+    "News_Content_Image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "News_Content_Image_Position": {
+      "type": "enumeration",
+      "enum": [
+        "Top",
+        "Bottom",
+        "Left",
+        "Right"
+      ]
+    }
+  },
+  "config": {}
+}

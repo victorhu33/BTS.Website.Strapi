@@ -1,0 +1,51 @@
+{
+  "kind": "singleType",
+  "collectionName": "guide_searches",
+  "info": {
+    "singularName": "guide-search",
+    "pluralName": "guide-searches",
+    "displayName": "Guide_Search"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "Guide_Search_Title": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "Guide_Search_Text": {
+      "type": "text",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "Guide_Search_Title_Search_Field_Name": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "Guide_Search_Title_Search_Field_Placeholder": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    }
+  }
+}

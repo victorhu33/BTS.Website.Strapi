@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_about_us_info_about_us_infos",
+  "info": {
+    "displayName": "About Us Info"
+  },
+  "options": {},
+  "attributes": {
+    "About_Us_Info_Letter": {
+      "type": "string"
+    },
+    "About_Us_Info_Word": {
+      "type": "string"
+    },
+    "About_Us_Info_Text": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

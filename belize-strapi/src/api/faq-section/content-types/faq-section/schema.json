@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "faq_sections",
+  "info": {
+    "singularName": "faq-section",
+    "pluralName": "faq-sections",
+    "displayName": "FAQ_Section"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "FAQ_Section_Name": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "FAQ_Section_Text": {
+      "type": "richtext",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "faq_themes": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::faq-theme.faq-theme",
+      "mappedBy": "faq_section"
+    }
+  }
+}
